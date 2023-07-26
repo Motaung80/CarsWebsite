@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+        />
+    </head>
+    <body>
+    
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">Car Key</a>
+        
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navmenu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="Cars.html" class="nav-link"><b>cars</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Brands/Brands.html" class="nav-link"><b>Brands</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Compare/Compare.html" class="nav-link"><b>Compare</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="FindCar/FindCar.html" class="nav-link"><b>FindCar</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <h1 class="display-5 my-5 text-center">Compare Cars</h1>
+        <div class="container">
+            <div class="col-md-9 mx-auto">
+                <table class="table">
+                    <tr class="bg-light">
+                        <th>Search A Car</th>
+                        <th width="300px">
+                            <!--<select class="form-control" id="select1" onchange="item1(this.value)">
+                                <option value="0">-- Select Anyone --</option>
+                            </select>-->
+                            <input type="text" class="form-control" id="select2" onchange="item2(this.value)">
+                        </th>
+                        <th width="300px">
+                            <!--<select class="form-control" id="select2" onchange="item2(this.value)">
+                                <option value="0">-- Select Anyone --</option>
+                            </select>-->
+                            <input type="text" class="form-control" id="select2" onchange="item2(this.value)">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Product Image</th>
+                        <td>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                                id="img1" alt=" ">
+                        </td>
+                        <td>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                                id="img2" alt=" ">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Product Price</th>
+                        <td id="price1">N/A</td>
+                        <td id="price2">N/A</td>
+                    </tr>
+                    <tr>
+                        <th>Product Description</th>
+                        <td id="desc1">N/A</td>
+                        <td id="desc2">N/A</td>
+                    </tr>
+                    <tr>
+                        <th>Product Brand</th>
+                        <td id="brand1">N/A</td>
+                        <td id="brand2">N/A</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+    </body>
+</html>
